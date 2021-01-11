@@ -116,7 +116,8 @@ export const getSearchResult = async (query) => {
 
   const data = await axios.get(multiSearch, {
     headers: {
-      "content-type": "application/json",
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
     },
   });
   console.log(" TV Review Data from API", data);
