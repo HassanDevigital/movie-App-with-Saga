@@ -30,7 +30,9 @@ const Search = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getSearch(query));
+    if (query !== "") {
+      dispatch(getSearch(query));
+    }
   }, [dispatch, query]);
 
   const onChange = (e) => {
