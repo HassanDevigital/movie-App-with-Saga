@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
   inputfeild: {
     width: "50%",
     marginLeft: "27%",
+    marginBottom: 100,
   },
 }));
 
@@ -39,7 +40,8 @@ const Search = () => {
   return (
     <div className="movies-container">
       {/* <DebounceInput
-        minLength={2}
+        className={classes.inputfeild}
+        minLength={3}
         debounceTimeout={300}
         value={query}
         onChange={onChange}

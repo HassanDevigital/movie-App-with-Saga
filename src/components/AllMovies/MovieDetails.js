@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   boot: {
     width: "100%",
     position: "relative",
-    top: -350,
+    top: -200,
   },
   media: {
     height: 550,
