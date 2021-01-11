@@ -42,7 +42,7 @@ const PeopleDetails = (props) => {
     console.log("dispatch main se people ki", id);
   }, []);
 
-  const dbImages = `${imgaeBseUrl}${peopledata.profile_path}`;
+  const dbImages = `${imgaeBseUrl}${peopledata.poster_path}`;
 
   const classes = useStyles();
 

@@ -21,7 +21,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import { useDispatch, useSelector } from "react-redux";
 import { getMovieDetail } from "../../store/actions/moviesDetailsActions";
 import { getMovieReview } from "../../store/actions/moviesReviewAction";
-const imgaeBseUrl = "https://www.themoviedb.org/t/p/w220_and_h330_face//";
+const imgaeBseUrl = "https://image.tmdb.org/t/p/w220_and_h330_face";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -93,8 +93,9 @@ const MovieDetails = (props) => {
     dispatch(getMovieReview(id));
     console.log("dispatch main se", id);
   }, []);
+  //={`https://image.tmdb.org/t/p/w220_and_h330_face${movieDetail.poster_path}`}
 
-  const dbImages = `${imgaeBseUrl}${details.backdrop_path}`;
+  const dbImages = `${imgaeBseUrl}${details.poster_path}`;
 
   const classes = useStyles();
 

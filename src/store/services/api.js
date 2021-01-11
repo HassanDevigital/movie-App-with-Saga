@@ -39,7 +39,6 @@ export const getAllDiscovers = async () => {
   console.log("Discover API data", data);
   return data;
 };
-getAllDiscovers();
 
 //AllUpcommings API
 export const getAllUpcomingsUrl = async () => {
@@ -48,15 +47,12 @@ export const getAllUpcomingsUrl = async () => {
   return data;
 };
 
-getAllUpcomingsUrl();
-
 //AllTrendingsAPI
 export const getAllTrendingsUrl = async () => {
   const data = await axios.get(TrendingsApiUrl);
   console.log("Trending API DATA", data);
   return data;
 };
-getAllTrendingsUrl();
 
 //All TVShows API
 export const getAllTvShowsUrl = async () => {
@@ -64,7 +60,6 @@ export const getAllTvShowsUrl = async () => {
   console.log("TVShows API", data);
   return data;
 };
-getAllTvShowsUrl();
 
 //ALL People API
 export const getAllPeopleUrl = async () => {
@@ -72,7 +67,6 @@ export const getAllPeopleUrl = async () => {
   console.log("ALL people Data APi", data);
   return data;
 };
-getAllPeopleUrl();
 
 export const getMovieDetailUrl = async (id) => {
   console.log("id from user clicked", id);
@@ -82,17 +76,15 @@ export const getMovieDetailUrl = async (id) => {
   console.log(" Movies Data APi", data);
   return data;
 };
-getMovieDetailUrl();
 
-export const getTvDetailUrl = async (id) => {
+export const getTvDetailUrl = (id) => {
   console.log("tvid from user clicked", id);
   const movieDetail = `${API_BASE_URL}/tv/${id}?api_key=${key}`;
 
-  const data = await axios.get(movieDetail);
+  const data = axios.get(movieDetail);
   console.log(" TV  Data APi", data);
   return data;
 };
-getTvDetailUrl();
 
 export const getPeopleDetails = async (id) => {
   console.log("People ID from user clicked", id);
@@ -102,7 +94,6 @@ export const getPeopleDetails = async (id) => {
   console.log(" People Data APi", data);
   return data;
 };
-getPeopleDetails();
 
 export const getMovieReview = async (reviewId) => {
   const MovieReview = `${API_BASE_URL}/movie/${reviewId}/reviews?api_key=${key}`;
@@ -111,7 +102,6 @@ export const getMovieReview = async (reviewId) => {
   console.log(" Movie Review Data from API", data);
   return data;
 };
-getMovieReview();
 
 export const getTvReview = async (tvReviewId) => {
   const TvReview = `${API_BASE_URL}/tv/${tvReviewId}/reviews?api_key=${key}`;
@@ -120,7 +110,6 @@ export const getTvReview = async (tvReviewId) => {
   console.log(" TV Review Data from API", data);
   return data;
 };
-getTvReview();
 
 export const getSearchResult = async (query) => {
   const multiSearch = `${API_BASE_URL}/search/multi/?api_key=${key}&query=${query}`;
@@ -129,4 +118,3 @@ export const getSearchResult = async (query) => {
   console.log(" TV Review Data from API", data);
   return data;
 };
-getSearchResult();

@@ -96,22 +96,22 @@ export default function Navbar() {
             <img className={classes.logo} src={logo} alt="show" />
           </Link>
 
-          <Typography className={classes.title} variant="p" noWrap>
+          <Typography className={classes.title} variant="h5" noWrap>
             <Link className={classes.link} to="/upcomming">
               Upcommings
             </Link>
           </Typography>
-          <Typography className={classes.title} variant="p" noWrap>
+          <Typography className={classes.title} variant="h5" noWrap>
             <Link className={classes.link} to="/trending">
               Trendings
             </Link>
           </Typography>
-          <Typography className={classes.title} variant="p" noWrap>
+          <Typography className={classes.title} variant="h5" noWrap>
             <Link className={classes.link} to="/tvshows">
               TV Shows
             </Link>
           </Typography>
-          <Typography className={classes.title} variant="p" noWrap>
+          <Typography className={classes.title} variant="h5" noWrap>
             <Link className={classes.link} to="/people">
               People
             </Link>
