@@ -114,7 +114,11 @@ export const getTvReview = async (tvReviewId) => {
 export const getSearchResult = async (query) => {
   const multiSearch = `${API_BASE_URL}/search/multi/?api_key=${key}&query=${query}`;
 
-  const data = await axios.get(multiSearch);
+  const data = await axios.get(multiSearch, {
+    headers: {
+      "content-type": "application/json",
+    },
+  });
   console.log(" TV Review Data from API", data);
   return data;
 };
