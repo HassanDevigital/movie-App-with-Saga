@@ -116,7 +116,7 @@ export const getSearchResult = async (query) => {
 
   const data = await axios.get(multiSearch, {
     headers: {
-      "Content-Type": "application/json",
+      // "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
     },
   });
