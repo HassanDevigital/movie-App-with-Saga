@@ -92,7 +92,7 @@ const MovieDetails = (props) => {
     dispatch(getMovieDetail(id));
     dispatch(getMovieReview(id));
     console.log("dispatch main se", id);
-  }, []);
+  }, [dispatch, id]);
   //={`https://image.tmdb.org/t/p/w220_and_h330_face${movieDetail.poster_path}`}
 
   const dbImages = `${imgaeBseUrl}${details.poster_path}`;

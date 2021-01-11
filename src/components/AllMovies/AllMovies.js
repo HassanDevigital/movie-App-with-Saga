@@ -11,7 +11,7 @@ const AllMovies = () => {
 
   useEffect(() => {
     dispatch(getAllMovies());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="movies-container">
