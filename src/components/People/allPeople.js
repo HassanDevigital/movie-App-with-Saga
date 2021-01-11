@@ -11,7 +11,7 @@ const AllPeople = () => {
   console.log(people);
   useEffect(() => {
     dispatch(getAllPeople());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="movies-container">

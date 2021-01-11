@@ -11,7 +11,7 @@ const TvShows = () => {
 
   useEffect(() => {
     dispatch(getTvShows());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="movies-container">

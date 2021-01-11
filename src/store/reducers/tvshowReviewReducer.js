@@ -9,7 +9,10 @@ const initialState = {
   error: "",
 };
 
-export default (state = initialState, { type, payload, error }) => {
+export const tvShowReviewReducer = (
+  state = initialState,
+  { type, payload, error }
+) => {
   switch (type) {
     case TVSHOW_REVIEW:
       return {

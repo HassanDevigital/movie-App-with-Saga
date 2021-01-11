@@ -10,7 +10,7 @@ const UpCommings = () => {
 
   useEffect(() => {
     dispatch(getAllUpCommings());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="movies-container">

@@ -9,7 +9,7 @@ const Trendings = () => {
 
   useEffect(() => {
     dispatch(getAllTrendings());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="movies-container">

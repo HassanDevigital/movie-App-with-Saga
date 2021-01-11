@@ -9,7 +9,10 @@ const initialState = {
   error: "",
 };
 
-export default (state = initialState, { type, payload, error }) => {
+export const movieDetailReducer = (
+  state = initialState,
+  { type, payload, error }
+) => {
   switch (type) {
     case GET_MOVIE_DETAILS:
       return {

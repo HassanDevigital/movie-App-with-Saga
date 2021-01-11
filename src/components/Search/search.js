@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { useSelector, useDispatch } from "react-redux";
 import Input from "@material-ui/core/Input";
 import Grid from "@material-ui/core/Grid";
-import { DebounceInput } from "react-debounce-input";
+//import { DebounceInput } from "react-debounce-input";
 
 import { getSearch } from "../../store/actions/searchAction";
 
@@ -31,7 +31,7 @@ const Search = () => {
 
   useEffect(() => {
     dispatch(getSearch(query));
-  }, [query]);
+  }, [dispatch, query]);
 
   const onChange = (e) => {
     setQuery(e.target.value);

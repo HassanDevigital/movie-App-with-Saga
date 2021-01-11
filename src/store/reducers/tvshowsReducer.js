@@ -9,7 +9,10 @@ const initialState = {
   error: "",
 };
 
-export default (state = initialState, { type, payload, error }) => {
+export const tvshowsReducer = (
+  state = initialState,
+  { type, payload, error }
+) => {
   switch (type) {
     case GET_ALL_TVSHOWS:
       return {

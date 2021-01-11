@@ -9,7 +9,10 @@ const initialState = {
   error: "",
 };
 
-export default (state = initialState, { type, payload, error }) => {
+export const UpcommingReducer = (
+  state = initialState,
+  { type, payload, error }
+) => {
   switch (type) {
     case GET_ALL_UPCOMMINGS:
       return {

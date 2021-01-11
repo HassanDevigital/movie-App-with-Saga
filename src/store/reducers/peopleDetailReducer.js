@@ -9,7 +9,10 @@ const initialState = {
   error: "",
 };
 
-export default (state = initialState, { type, payload, error }) => {
+export const peopleDetailReducer = (
+  state = initialState,
+  { type, payload, error }
+) => {
   switch (type) {
     case GET_PEOPLE_DETAILS:
       return {

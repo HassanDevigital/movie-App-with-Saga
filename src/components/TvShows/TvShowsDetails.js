@@ -89,7 +89,7 @@ const TvShowsDetails = (props) => {
     dispatch(getTvDetail(id));
     dispatch(getTvShowReview(id));
     console.log("dispatch main se", id);
-  }, []);
+  }, [dispatch, id]);
 
   const dbImages = `${imgaeBseUrl}${tvdata.backdrop_path}`;
 
