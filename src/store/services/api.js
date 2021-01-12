@@ -111,15 +111,11 @@ export const getTvReview = async (tvReviewId) => {
   return data;
 };
 
+//https://api.themoviedb.org/3/search/movie?api_key=fd0cd44d9b05da67db3dd6795fbd6dd5&language=en-US&query=won&page=1&include_adult=false
 export const getSearchResult = async (query) => {
-  const multiSearch = `${API_BASE_URL}/search/multi/?api_key=${key}&language=en-US&query=${query}&page=1&include_adult=false`;
+  const multiSearch = `${API_BASE_URL}/search/multi?api_key=${key}&language=en-US&query=${query}&page=1&include_adult=false`;
 
-  const data = await axios.get(multiSearch, {
-    headers: {
-      // "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
-    },
-  });
+  const data = await axios.get(multiSearch);
   console.log(" TV Review Data from API", data);
   return data;
 };
