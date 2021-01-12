@@ -4,7 +4,7 @@ import { getSearchResult } from "../services/api";
 
 import { getSearchSuccess, getSearchFailure } from "../actions/searchAction";
 
-import { takeEvery, put, call } from "redux-saga/effects";
+import { takeEvery, takeLatest, put, call } from "redux-saga/effects";
 
 function* searchUrl({ searchLeters }) {
   try {

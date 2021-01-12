@@ -3,9 +3,9 @@ import MoviesCard from "../AllMovies/MoviesCard";
 import { makeStyles } from "@material-ui/core/styles";
 
 import { useSelector, useDispatch } from "react-redux";
-import Input from "@material-ui/core/Input";
+//import Input from "@material-ui/core/Input";
 import Grid from "@material-ui/core/Grid";
-//import { DebounceInput } from "react-debounce-input";
+import { DebounceInput } from "react-debounce-input";
 
 import { getSearch } from "../../store/actions/searchAction";
 
@@ -41,20 +41,21 @@ const Search = () => {
 
   return (
     <div className="movies-container">
-      {/* <DebounceInput
-        className={classes.inputfeild}
+      <DebounceInput
+        className="dbounce"
         minLength={3}
         debounceTimeout={300}
         value={query}
         onChange={onChange}
-      /> */}
-      <Input
+        placeholder="Serach here...."
+      />
+      {/* <Input
         className={classes.inputfeild}
         placeholder="Search here"
         inputProps={{ "aria-label": "description" }}
         onChange={onChange}
         value={query}
-      />
+      /> */}
 
       <Grid container item xs={12} spacing={2}>
         {searchRes?.results?.length > 0 &&
