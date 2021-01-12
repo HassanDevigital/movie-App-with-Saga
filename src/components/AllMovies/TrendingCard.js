@@ -8,7 +8,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 
-const imgaeBseUrl = "https://www.themoviedb.org/t/p/w220_and_h330_face//";
+const imgaeBseUrl = "https://www.themoviedb.org/t/p/w220_and_h330_face";
 
 const useStyles = makeStyles({
   root: {
