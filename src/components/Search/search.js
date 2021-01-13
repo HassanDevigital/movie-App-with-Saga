@@ -9,18 +9,18 @@ import { DebounceInput } from "react-debounce-input";
 
 import { getSearch } from "../../store/actions/searchAction";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1),
-    },
-  },
-  inputfeild: {
-    width: "50%",
-    marginLeft: "27%",
-    marginBottom: 100,
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     "& > *": {
+//       margin: theme.spacing(1),
+//     },
+//   },
+//   inputfeild: {
+//     width: "50%",
+//     marginLeft: "27%",
+//     marginBottom: 100,
+//   },
+// }));
 
 const Search = () => {
   const [query, setQuery] = useState("");
