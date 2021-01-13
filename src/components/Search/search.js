@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MoviesCard from "../AllMovies/MoviesCard";
-import { makeStyles } from "@material-ui/core/styles";
+//import { makeStyles } from "@material-ui/core/styles";
 
 import { useSelector, useDispatch } from "react-redux";
 //import Input from "@material-ui/core/Input";
