@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 const Search = () => {
   const [query, setQuery] = useState("");
 
-  const classes = useStyles();
+  //const classes = useStyles();
   const searchRes = useSelector((state) => state.searchData.searchData);
   const dispatch = useDispatch();
 
