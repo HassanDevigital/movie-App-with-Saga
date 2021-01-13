@@ -35,3 +35,13 @@
   text-align: center;
   text-decoration: none;
 }
+.dbounce {
+  width: 50%;
+  margin-left: 27%;
+  border-style: none;
+  border-bottom: 2px solid slateblue;
+  outline: 0;
+  margin-bottom: 100px;
+  font-style: inherit;
+  line-height: 30px;
+}

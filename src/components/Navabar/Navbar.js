@@ -4,7 +4,8 @@ import logo from "../../assets/images/logo.svg";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import InputBase from "@material-ui/core/InputBase";
+//import InputBase from "@material-ui/core/InputBase";
+import Button from "@material-ui/core/Button";
 import { fade, makeStyles } from "@material-ui/core/styles";
 import SearchIcon from "@material-ui/icons/Search";
 
@@ -60,6 +61,7 @@ const useStyles = makeStyles((theme) => ({
     color: "inherit",
   },
   inputInput: {
+    pointerEvents: "none",
     padding: theme.spacing(1, 1, 1, 0),
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
@@ -81,6 +83,11 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textAlign: "center",
     textDecoration: "none",
+  },
+  button: {
+    backgroundColor: "#0dbfd6",
+    color: "white",
+    pointerEvents: "none",
   },
 }));
 
@@ -116,7 +123,15 @@ export default function Navbar() {
             </Link>
           </Typography>
           <Link className={classes.link} to="/search">
-            <div className={classes.search}>
+            <Button
+              className={classes.button}
+              variant="contained"
+              href="#contained-buttons"
+            >
+              <SearchIcon />
+              Search
+            </Button>
+            {/* <div className={classes.search}>
               <div className={classes.searchIcon}>
                 <SearchIcon />
               </div>
@@ -128,7 +143,7 @@ export default function Navbar() {
                 }}
                 inputProps={{ "aria-label": "search" }}
               />
-            </div>
+            </div> */}
           </Link>
         </Toolbar>
       </AppBar>
